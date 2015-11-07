@@ -1,0 +1,44 @@
+Model of DB data
+
+db.products.insert({
+    name: "Macbook Pro",
+    category: "Electronics",
+    model: "123-00001",
+    sku: "399911",
+    img: "http://somewebsite.com/someimage.jpg",
+    price: 499.99,
+    pickup_available: true,
+    description: "It's great, really!",
+    release_date: ISODate("2015-09-01"),
+    specifications: {
+        height: "7.36 inches",
+        width: "10.52 inches",
+        weight: "79 pounds",
+        battery_life: "16 months, 2 days"
+
+    },
+    reviews: [
+        {
+            subject: "I love my life",
+            body: "I bought one, and now my wife loves me. a lot.",
+            rating: "4.5 Stars",
+            would_recommend: true
+
+        },
+        {
+            subject: "You will regret this purchase.",
+            body: "I bought one, and now my husband loves me. a lot. Wouldn't recommend",
+            rating: "2 Stars",
+            would_recommend: false
+
+        },
+        {
+            subject: "Better than butter",
+            body: "I bought one, and now my friends loves me. a lot.",
+            rating: "12 Stars",
+            would_recommend: true
+
+        }
+    ],
+    protection_services: ['damage protection', 'bicycle recovery', 'etc']
+})
